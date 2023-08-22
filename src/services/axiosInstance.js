@@ -1,5 +1,9 @@
 import axios from 'axios';
-import APIs from '../services/constants';
+
+/**
+ * Uncomment to Mock
+ */
+// import APIs from '../services/constants';
 // var MockAdapter = require('axios-mock-adapter');
 
 // const mockTodosData = {
@@ -55,6 +59,9 @@ axiosInstance.interceptors.response.use(
   error => errorHandler(error),
 );
 
+/**
+ * Uncomment to Mock
+ */
 // const mock = new MockAdapter(axiosInstance, {delayResponse: 1000});
 // mock.onGet(APIs.TODOS_API).reply(200, mockTodosData);
 // mock.onAny().passThrough();
